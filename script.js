@@ -34,3 +34,21 @@ function showSection(sectionId){
         }
     }
 }
+
+function doLogin(event){
+    event.preventDefault();
+    console.log("Enviando formulario....");
+    let user = document.forms.login.user.value;
+    let password = document.forms.login.password.value;
+
+    if(user=="user" && password=="1234"/* Esto se hará en el back-end en las siguientes fases */){
+        //Login existoso
+        alert("Login correcto");
+        //Ocultar las opciones de menú de inicio y registro
+        //Mostrar las otras opciones del servicio
+        //Dejar el Acerca de
+    }else{
+        //error
+        alert("Login incorrecto");
+    }
+}

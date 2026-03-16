@@ -21,7 +21,7 @@
         <div>
           <header><h2>Inicio</h2></header>
           <p>Introduzca su credenciales para entrar enla aplicación</p>
-          <form name="login">
+          <form name="login" onsubmit="doLogin(event)">
             <label for="user">Usuario:</label>
             <input class="bloque" type="text" name="user" id="user" required/>
             <label for="password">Clave:</label>
