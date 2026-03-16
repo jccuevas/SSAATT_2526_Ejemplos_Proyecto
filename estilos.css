@@ -1,3 +1,11 @@
+.oculto{
+    display: none;
+}
+
+.visible{
+    display: block;
+}
+
 main{
     display: flex;
     flex-direction: column;
@@ -26,7 +34,7 @@ table{
 td,th{
      border: 2px solid black;
 }
-
+/**/
 header h1{
     color: white;
     background-color: blue;
@@ -65,4 +73,29 @@ nav > a{
 
 input.bloque{
     display: block;
+}
+
+ul.turnos{
+    background-color: darkgray;
+}
+li.turno{
+    font-style: italic;
+    list-style: none;
+    border-bottom: 2px solid black;
+}
+
+div#errorBanner{
+    padding: 0.5em;
+    text-align: center;
+    background-color: red;
+    color: white;
+    font-size: large;
+}
+
+footer{
+    font-size: 0.8em;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 0.5em;
 }
