@@ -1,4 +1,13 @@
 
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    margin: 0 auto;
+    width: 80%;
+}
+
 .visible{
     display: block;
 }
@@ -9,28 +18,19 @@ main{
 }
 
 nav#horizontal{
+    background-color: lightskyblue;
     width: 100%;
     display: flex;
-    justify-content: center;
-    border: 1px solid black;
+    justify-content: start;
 }
 nav#vertical{
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: start;
     border: 1px solid black;
 }
 
-
-table{
-    border-collapse: collapse;
-    border: 2px solid black;
-}
-
-td,th{
-     border: 2px solid black;
-}
 /**/
 header h1{
     color: white;
@@ -42,18 +42,16 @@ header h1{
 section.content{
     display: flex;
     padding: 0.5em;
-    width: 80%;
     height: 70%;
     background-color: lightgrey;
     margin-bottom: 1em;
-
 }
 
+/* to hide inactive sections*/
 section.oculta{
     display: none;
 }
-
-
+/* Layout of secitons - div to left - aside to right*/
 section div{
     flex: 2;
 }
@@ -64,13 +62,20 @@ section aside{
     padding: 0.2em;
 }
 
+/* navigation bar links style*/
 nav > a{
     color: white;
     text-decoration: none;
     display: inline-block;
-    width: 75px;
+    width: 100px;
     background-color: rgb(47, 0, 255);
     padding: 0.2em;
+}
+
+nav > a:hover{
+    color: blue;
+    background-color: white;
+
 }
 
 nav > a.inactive{
@@ -84,6 +89,20 @@ nav > a.active{
     color: yellow;
 }
 
+nav > a.active:hover{
+    background-color: yellow;
+    color: green;
+}
+
+input{
+    padding: 0.5em;
+    border-radius: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+input:invalid{
+    outline: 2px dotted red;
+}
 
 input.bloque{
     display: block;
