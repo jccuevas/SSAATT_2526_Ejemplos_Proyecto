@@ -1,6 +1,3 @@
-.oculto{
-    display: none;
-}
 
 .visible{
     display: block;
@@ -52,6 +49,11 @@ section.content{
 
 }
 
+section.oculta{
+    display: none;
+}
+
+
 section div{
     flex: 2;
 }
@@ -69,6 +71,10 @@ nav > a{
     width: 75px;
     background-color: rgb(47, 0, 255);
     padding: 0.2em;
+}
+
+nav > a.inactivo{
+    display: none;
 }
 
 input.bloque{
@@ -98,4 +104,8 @@ footer{
     color: white;
     text-align: center;
     padding: 0.5em;
+}
+
+div.oculto{
+    display: none;
 }

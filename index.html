@@ -1,6 +1,4 @@
-https://prod.liveshare.vsengsaas.visualstudio.com/join?8F60EFB91F6B25E5B1510E47950F21D8EE40
-
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <title>Fase 1</title>
@@ -8,24 +6,21 @@ https://prod.liveshare.vsengsaas.visualstudio.com/join?8F60EFB91F6B25E5B1510E479
     <link rel="stylesheet" href="estilos.css" />
   </head>
   <body>
-    <header ><h1>Fase 1</h1></header>
+    <header><h1>Proyecto SSAATT</h1></header>
+    <div id="errorBanner" class="oculto">ERROR - 404</div>
     <nav id="horizontal">
-      <a href="#incio">Inicio</a>
-      <a href="#registro">Registro</a>
-      <a href="#acercade">Acerca de</a>
-    </nav>
-    <nav id="vertical">
-      <a href="#incio">Inicio</a>
-      <a href="#registro">Registro</a>
-      <a href="#acercade">Acerca de</a>
+      <a href="#">Inicio</a>
+      <a href="#">Registro</a>
+      <a href="#" class="inactivo">Leer</a>
+      <a href="#" class="inactivo">Crear</a>
+      <a href="#" class="inactivo">Modificar</a>
+      <a href="#">Acerca de</a>
     </nav>
     <main>
       <section class="content" id="sec-1">
-
         <div>
-          <header><h2>Section 2</h2></header>
-          <p>Este es un cambio para la rama Sesion-Git</p>
-          <p>Autenticación...</p>
+          <header><h2>Inicio</h2></header>
+          <p>Introduzca su credenciales para entrar enla aplicación</p>
           <form action="http://labtelema.ujaen.es/form.php" method="post">
             <label for="user">Usuario:</label>
             <input class="bloque" type="text" name="user" id="user" />
@@ -33,51 +28,51 @@ https://prod.liveshare.vsengsaas.visualstudio.com/join?8F60EFB91F6B25E5B1510E479
             <input type="password" name="password" id="password" />
           </form>
         </div>
-        <aside>En esta sección muestra el formulario de autenticación.</aside>
-      </section>
-      <section class="content" id="registro">
-        <div>
-          <h2>Registro</h2>
-        </div>
         <aside>
-          <table>
-            <tr>
-              <th>Horas</th>
-              <th>Lunes</th>
-            </tr>
-            <tr>
-              <th>12:00-13:00</th>
-              <td>una</td>
-              <td>dos</td>
-            </tr>
-            <tr>
-              <th>Hora</th>
-              <td>una</td>
-              <td>dos</td>
-            </tr>
-            <tr>
-              <th>Hora</th>
-              <td>una</td>
-              <td>dos</td>
-            </tr>
-            <tr>
-              <th>Hora</th>
-              <td>
-                <div>Antonio</div>
-                <p>10:30-11:30</p>
-              </td>
-              <td>dos</td>
-            </tr>
-          </table>
+          En esta sección muestra el formulario de autenticación. Emplee las
+          credenciales empleadas cuando se registró para entrar en la
+          aplicación.
         </aside>
       </section>
-      <section class="content" id="acercade">
+      <section class="content oculta" id="sec-2">
+        <div>
+          <h2>Registro de un nuevo usuario</h2>
+          <form action="http://labtelema.ujaen.es/form.php" method="post">
+            <label for="user">Usuario:</label>
+            <input class="bloque" type="text" name="user" id="user" />
+            <label for="name">Nombre:</label>
+            <input class="bloque" type="text" name="name" id="name" />
+            <label for="surname">Apellidos:</label>
+            <input class="bloque" type="text" name="surname" id="surname" />
+            <label for="password">Clave:</label>
+            <input type="password" name="password" id="password" />
+          </form>
+        </div>
+        <aside></aside>
+      </section>
+      <section class="content oculta" id="sec-3">
         <h2>Acerca de</h2>
-        <img src="uja.png" alt="">
+        <img src="uja.png" alt="" />
+      </section>
+      <section class="content oculta" id="sec-4">
+        <h2>Leo elemento de mi servicio</h2>
+        <p>Aquí leeré elementos de mi servicio</p>
+      </section>
+       <section class="content oculta" id="sec-5">
+        <h2>Creo elemento de mi servicio</h2>
+        <p>Aquí crearé elementos de mi servicio</p>
+      </section>
+       <section class="content oculta" id="sec-6">
+        <h2>Modifico elemento de mi servicio</h2>
+        <p>Aquí modificaré elementos de mi servicio</p>
       </section>
     </main>
     <footer>
       <p>Servicios y aplicaciones telemáticas</p>
+      <p>Grado en Ingeniería de Tecnologías de Telecomunicación</p>
+      <p>Grado en Ingeniería Telemática</p>
+      <p>Curso 2025/2026</p>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
