@@ -73,9 +73,17 @@ nav > a{
     padding: 0.2em;
 }
 
-nav > a.inactivo{
+nav > a.inactive{
     display: none;
 }
+
+nav > a.active{
+    /*outline: 2px red solid;
+    z-index: 10;*/
+    background-color: green;
+    color: yellow;
+}
+
 
 input.bloque{
     display: block;
