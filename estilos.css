@@ -79,7 +79,7 @@ nav > a:hover{
     background-color: white;
 
 }
-
+/* Selector for direct ofspring anchor*/
 nav > a.inactive{
     display: none;
 }
