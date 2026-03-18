@@ -81,7 +81,7 @@ nav > a:hover{
 }
 /* Selector for direct ofspring anchor*/
 nav > a.inactive{
-    display: inline-block;
+    display: none;
 }
 
 nav > a.active{

@@ -21,11 +21,12 @@
         <div>
           <header><h2>Inicio</h2></header>
           <p>Introduzca su credenciales para entrar enla aplicación</p>
-          <form action="http://labtelema.ujaen.es/form.php" method="post">
+          <form name="login" onsubmit="doLogin(event)">
             <label for="user">Usuario:</label>
-            <input class="bloque" type="text" name="user" id="user" />
+            <input class="bloque" type="text" name="user" id="user" >
             <label for="password">Clave:</label>
-            <input type="password" name="password" id="password" />
+            <input type="password" name="password" id="password" >
+            <input type="submit" value="Entrar">
           </form>
         </div>
         <aside>
