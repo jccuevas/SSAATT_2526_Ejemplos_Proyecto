@@ -9,6 +9,21 @@ function showError(event, error){
 
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 function showSection(sectionId){
 
     console.log("Mostrar sección "+sectionId);
@@ -34,7 +49,7 @@ function showSection(sectionId){
         }
     }
 }
-
+*/
 function doLogin(event){
     event.preventDefault();
     console.log("Enviando formulario....");

@@ -39,6 +39,7 @@ header h1{
     padding: 0.5em;
 }
 
+
 section.content{
     display: flex;
     padding: 0.5em;
@@ -51,6 +52,7 @@ section.content{
 section.oculta{
     display: none;
 }
+
 /* Layout of secitons - div to left - aside to right*/
 section div{
     flex: 2;
