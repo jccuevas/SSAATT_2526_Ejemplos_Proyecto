@@ -8,26 +8,36 @@ function showError(event, error){
     }
 
 }
+//Global var for section control
+var activeSection = '1';
+// grupo C - sesión 2
+function showSection(event,sectionId){
+    let activeSectionElement = document.getElementById("sec-"+activeSection);
+    if(activeSection!=sectionId){
+        let section = document.getElementById("sec-"+sectionId);
+        let oldNav = document.getElementById("nav-"+activeSection);
+        let newNav = document.getElementById("nav-"+sectionId);
+        if(activeSectionElement!=null && section!=null && oldNav!=null && newNav!=null){
+            //Change current active section
+            activeSectionElement.classList.add("oculta");
+            section.classList.remove("oculta");
+            //change active menu item
+            oldNav.classList.remove("active");
+            newNav.classList.add("active");
+            //Update active section tracking
+            activeSection=sectionId;
+        }
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 /*
+//Grupo A - Sesión 2
 function showSection(sectionId){
 
     console.log("Mostrar sección "+sectionId);
-    //let sections = document.querySelectorAll("[id|=sec-]");
+    //let sections = document.querySelectorAll("[id|=sec]");
     let sections = document.getElementsByTagName("section");
     if(sections!=null){
         for(let s of sections){

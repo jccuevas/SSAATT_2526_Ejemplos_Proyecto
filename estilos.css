@@ -81,14 +81,14 @@ nav > a:hover{
 }
 /* Selector for direct ofspring anchor*/
 nav > a.inactive{
-    display: none;
+    display: inline-block;
 }
 
 nav > a.active{
-    /*outline: 2px red solid;
+    /*border: 4px red solid;
     z-index: 10;*/
-    background-color: green;
-    color: yellow;
+    background-color: white;
+    color: rgb(47, 0, 255);
 }
 
 nav > a.active:hover{
