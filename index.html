@@ -9,12 +9,12 @@
     <header><h1>Proyecto SSAATT</h1></header>
     <div id="errorBanner" class="oculto">ERROR - 404</div>
     <nav id="horizontal">
-      <a id="nav-1" href="#" class ="active" onclick="showSection('1')">Inicio</a>
-      <a id="nav-2" href="#" onclick="showSection('2')">Registro</a>
-      <a id="nav-4" href="#" class="inactive" onclick="showSection('4')">Leer</a>
-      <a id="nav-5" href="#" class="inactive" onclick="showSection('5')">Crear</a>
-      <a id="nav-6" href="#" class="inactive" onclick="showSection('6')">Modificar</a>
-      <a id="nav-3" href="#" onclick="showSection('3')">Acerca de</a>
+      <a id="nav-1" href="#" class ="active" onclick="showSectionA('1')">Inicio</a>
+      <a id="nav-2" href="#" onclick="showSectionA('2')">Registro</a>
+      <a id="nav-4" href="#" class="inactive" onclick="showSectionA('4')">Leer</a>
+      <a id="nav-5" href="#" class="inactive" onclick="showSectionA('5')">Crear</a>
+      <a id="nav-6" href="#" class="inactive" onclick="showSectionA('6')">Modificar</a>
+      <a id="nav-3" href="#" onclick="showSectionA('3')">Acerca de</a>
     </nav>
     <main>
       <section class="content" id="sec-1">
@@ -38,7 +38,7 @@
       <section class="content oculta" id="sec-2">
         <div>
           <h2>Registro de un nuevo usuario</h2>
-          <form name="register">
+          <form name="register" onsubmit="doRegister(event)">
             <label for="user">Usuario:</label>
             <input class="bloque" type="text" name="user" id="user" minlength="4" maxlength="16" required />
             <label for="name">Nombre:</label>
@@ -47,6 +47,8 @@
             <input class="bloque" type="text" name="surname" id="surname" />
             <label for="password">Clave:</label>
             <input class="bloque" type="password" name="password" id="password" minlength="4" maxlength="16" required />
+            <label for="password-check">Comprobación de clave:</label>
+            <input class="bloque" type="password" name="password-check" id="password-check" minlength="4" maxlength="16" required />
             <input class="bloque" type="submit" value="Registrar">
           </form>
         </div>
