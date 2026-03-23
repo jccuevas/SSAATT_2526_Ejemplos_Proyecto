@@ -119,12 +119,13 @@ li.turno{
     border-bottom: 2px solid black;
 }
 
-div#errorBanner{
+#errorBanner{
     padding: 0.5em;
-    text-align: center;
+    text-align: left;
     background-color: red;
     color: white;
     font-size: large;
+    overflow: auto;
 }
 
 footer{
@@ -137,4 +138,8 @@ footer{
 
 div.oculto{
     display: none;
+}
+
+#closeError{
+    float: right;
 }

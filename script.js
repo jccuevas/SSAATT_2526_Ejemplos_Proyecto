@@ -83,8 +83,9 @@ function doLogin(event) {
     //Mostrar las otras opciones del servicio
     //Dejar el Acerca de
   } else {
+    console.log("Error de autenticación");
     //error
-    alert("Login incorrecto");
+    showError("Credenciales incorrectas",5);
   }
 }
 
@@ -111,4 +112,32 @@ function doRegister(event) {
   // comprobar que las claves son iguales
 
   //Si son iguales envío de la petición al servidor
+}
+
+/**
+ * 
+ * @param {*} msg Mensaje a mostrar
+ * @param {*} time Tiempo en segundos para mostrar el mensaje 
+ */
+function showError(msg,time=5){
+    
+    let div = document.getElementById("errorBanner");
+
+    if(div!=null){
+        let p = document.getElementById("errorBannerMsg");
+        if(p!=null){
+            p.textContent=msg;
+        }
+        console.log("Mostrando div")
+        div.classList.remove("oculto");
+        setTimeout(()=>hideError(),time*1000);
+    }
+}
+
+function hideError(){
+    let div = document.getElementById("errorBanner");
+    if(div!=null){
+        div.classList.add("oculto");
+        clearTimeout(hideError());
+    }
 }
