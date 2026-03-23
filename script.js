@@ -150,3 +150,31 @@ function hideError(){
         clearTimeout(hideError());
     }
 }
+
+
+var datos={
+    "name":"John",
+    "surname":"Doe",
+    "age":20
+}
+function personalDataDiv(data,color){
+    let div = document.createElement("div");
+    div.style.backgroundColor=color;
+    div.appendChild(personalDataElement(data));
+    return div;
+}
+
+function personalDataElement(data){
+    let p = document.createElement("p");
+    p.innerText=data.name+" "+data.surname+"[age="+data.age+"]";
+    return p;
+}
+
+function ejemplo(event){
+
+    let section=document.getElementById("sec-3");
+    if(section!=null){
+        section.appendChild(personalDataDiv(datos,"red"))
+
+    }
+}
