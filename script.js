@@ -85,7 +85,7 @@ function doLogin(event) {
   } else {
     console.log("Error de autenticación");
     //error
-    showError("Credenciales incorrectas",5);
+    showError("Credenciales incorrectas","er");
   }
 }
 
@@ -115,9 +115,10 @@ function doRegister(event) {
 }
 
 /**
- * 
- * @param {*} msg Mensaje a mostrar
- * @param {*} time Tiempo en segundos para mostrar el mensaje 
+ * Esta función muestra el mensaje de error en la zona preparada en la página web.
+ * El mensaje se oculta autormáticamente después de 
+ * @param {string} msg Mensaje a mostrar
+ * @param {integer} time Tiempo en segundos para mostrar el mensaje 
  */
 function showError(msg,time=5){
     
@@ -130,10 +131,18 @@ function showError(msg,time=5){
         }
         console.log("Mostrando div")
         div.classList.remove("oculto");
+        if(isNaN(time)){
+            console.error("Parámetro time no es un número");
+            time=5;
+        }
+
         setTimeout(()=>hideError(),time*1000);
     }
 }
 
+/**
+ * función para ocultar el mensaje de error
+ */
 function hideError(){
     let div = document.getElementById("errorBanner");
     if(div!=null){

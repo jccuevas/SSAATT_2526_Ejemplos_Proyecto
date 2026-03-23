@@ -120,12 +120,26 @@ li.turno{
 }
 
 #errorBanner{
-    padding: 0.5em;
+    padding: 0.2em;
     text-align: left;
-    background-color: red;
-    color: white;
+    border: 4px solid red;
+    color: red;
     font-size: large;
     overflow: auto;
+}
+
+#errorBanner > p{
+    float: left;
+    width: 80%;
+}
+
+#errorBanner.oculto{
+    display: none;
+}
+
+#closeError{
+    float: right;
+    border-style: none;
 }
 
 footer{
@@ -136,10 +150,3 @@ footer{
     padding: 0.5em;
 }
 
-div.oculto{
-    display: none;
-}
-
-#closeError{
-    float: right;
-}
